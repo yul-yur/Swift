@@ -115,7 +115,7 @@ class truckCar: Car {
 
 extension sportCar: CustomStringConvertible {
 
-	func OpenRoof (act: Windows) {
+	func OpenRoof (act: Roofs) {
 		isOpenRoof = Roofs(rawValue: act.rawValue)!
 	}
 
@@ -147,7 +147,7 @@ print(kamaz.description)
 var ferrari = sportCar(mark: "Ferrari F430", releaseYear: 2013)
 ferrari.ActivateMotor(act: .on)
 ferrari.CarWindows(act: .open)
-//ferrari.OpenRoof(act: .open)
+ferrari.OpenRoof(act: .open)
 print(ferrari.description)
 
 
